@@ -23,6 +23,8 @@ spec:
     image: quay.io/cybozu/ceph:15.2.1.1
   dashboard:
     ssl: true
+  priorityClassNames:
+    osd: node-bound
   storage:
     storageClassDeviceSets:
       - name: set1
